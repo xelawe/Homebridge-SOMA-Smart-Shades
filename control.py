@@ -189,7 +189,8 @@ def parse_read_write():
                 if args.verbose:
                     printv("out = " + str(int(out_val[0][1], 16)))
                 else:
-                    print(str(args.command) + " " + str(int(out_val[0][1], 16)))
+                    # print(str(args.command) + " " + str(int(out_val[0][1], 16)))
+                    print(str(int(out_val[0][1], 16)))
                 return True
             elif "written successfully" in last_line:
                 printv("out = write successful")
